@@ -69,8 +69,11 @@ public class Store extends Book {
 		name  = input.nextLine();
 		for(int i = 0; i < book.size(); i++) {
 			if(book.get(i).getName().equalsIgnoreCase(name)) {
-				System.out.println(book.get(i));
-				System.out.println("Da tim thay !!");
+				System.out.println("Da tim thay !!\n");
+				System.out.println("id:" + book.get(i).id);
+				System.out.println("name:" + book.get(i).name);
+				System.out.println("price:" + book.get(i).price);
+				System.out.println("\n");
 				break;
 			}
 		}
