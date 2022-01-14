@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="package_and_object_class_in_java"/>
+	<classpathentry kind="src" path="array in java"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
