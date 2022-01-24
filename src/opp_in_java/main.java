@@ -14,14 +14,14 @@ public class main {
 		sc.nextLine();
 		System.out.println("Nhap color: ");
 		String color = sc.nextLine();
-		c1.setColor(color);
+     	c1.setColor(color);
 		System.out.println("========\n");
 		c1.showCircle();
 		System.out.println("========\n");
 		Circle c2 = new Circle(1.0, "yellow");
 		c2.showCircle();
 		System.out.println("========\n");
-		Circle c3 = new Circle(1.0);
+    	Circle c3 = new Circle(1.0);
 		c3.showCircle();
 		System.out.println("========\n");
 		Circle c4 = new Circle("green");
@@ -65,6 +65,20 @@ public class main {
 		System.out.println("======================");
 		e.showInfomation();
 		
+		Account acc1 = new Account();
+		Account acc2 = new Account();
+		acc1.setId(1);
+		acc1.setName("Cuongdz");
+		acc1.setBalance(1000);
+		acc2.setId(2);
+		acc2.setName("Tuyet Ngoc");
+		acc2.setBalance(500);
+		System.out.print("Nhap so tien muon chuyen: ");
+		int amount  = sc.nextInt();
+		acc1.tranferTo(acc2, amount);
+		acc1.showInfomation();
+		System.out.print("-------\n");
+		acc2.showInfomation();
 		sc.close();
 	}
 
