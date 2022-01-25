@@ -1,11 +1,16 @@
 package opp_in_java;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
+
 
 public class main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
 		Circle c1 = new Circle();
 		System.out.println("Nhap radious: ");
 		double radious = sc.nextDouble();
@@ -79,6 +84,25 @@ public class main {
 		acc1.showInfomation();
 		System.out.print("-------\n");
 		acc2.showInfomation();
+		
+		
+		Calendar calendar = new GregorianCalendar();
+		Date date = new Date();
+		DateTime datetime = new DateTime();
+		datetime.setDate(date.getDate());
+		datetime.setMonth(date.getMonth() + 1);
+		datetime.setYear(calendar.get(Calendar.YEAR));
+		datetime.showDate();
+		
+		Worker worker = new Worker();
+		worker.inputInfo();
+		worker.bonus();
+		System.out.print("---------\n");
+		worker.printInfo();
+		
+		Student student = new Student();
+		student.inputInfo();
+		student.showInfo();
 		sc.close();
 	}
 
